@@ -1,0 +1,7 @@
+package vendor.sample.benchmark@1.0;
+
+struct SampleMessage {
+    uint32_t size;
+    vec<uint8_t> data;
+};
+

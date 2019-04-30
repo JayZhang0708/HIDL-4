@@ -1,0 +1,6 @@
+package vendor.sample.benchmark@1.0;
+
+interface IBenchmark {
+    writeMessage(SampleMessage message);
+    oneway writeMessageOneway(SampleMessage message);
+};

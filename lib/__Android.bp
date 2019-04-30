@@ -1,0 +1,28 @@
+cc_library_headers {
+    name: "libsample_headers",
+    export_include_dirs: ["./include"],
+}
+
+cc_library {
+    name: "libsample",
+    srcs: [
+        "sample.c",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libutils",
+        "libcutils",
+    ],
+    header_libs: [
+        "libsample_headers",
+    ],
+    export_header_lib_headers: ["libsample_headers"],
+    local_include_dirs: ["./"],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+    ],
+}

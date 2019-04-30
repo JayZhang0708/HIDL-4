@@ -1,0 +1,22 @@
+cc_binary {
+    name: "benchmark",
+    srcs: [
+        "benchmark.cpp",
+        "sample.cpp"
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+
+    shared_libs: [
+        "libutils",
+        "vendor.sample.benchmark@1.0",
+        "libbase",
+        "liblog",
+        "libhidlbase",
+        "libhidltransport",
+    ],
+}
+

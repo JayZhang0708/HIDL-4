@@ -1,0 +1,8 @@
+subdirs = [
+    "*"
+]
+
+hidl_package_root {
+    name: "vendor.sample",
+    path: "vendor/honeywell/common/sample/interface",
+}
